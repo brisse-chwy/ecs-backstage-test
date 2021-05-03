@@ -37,13 +37,6 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
-        githubTeam:
-          title: Github Team
-          type: string
-          description: Which github team does this app belong to?
-          ui:autofocus: true
-          ui:options:
-            rows: 5
         numLambdas:
           title: Number of Lambdas
           type: number
