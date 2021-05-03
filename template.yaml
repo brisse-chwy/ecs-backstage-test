@@ -44,13 +44,15 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
-        # loggingType:
-        #   title: Type of Logging
-        #   type: number
-        #   description: How many lambdas would you like to be created?
-        #   ui:autofocus: true
-        #   ui:options:
-        #     rows: 5
+        loggingType:
+          title: Type of Logging
+          type: string
+          description: How many lambdas would you like to be created?
+          ui:autofocus: true
+          ui:options:
+            rows: 5
+          ui:enum:
+            ['pci', 'sox', 'sensitive_financial', 'pii', 'not_applicable']
     - title: Choose a location
       required:
         - repoUrl
