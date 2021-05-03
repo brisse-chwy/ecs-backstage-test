@@ -47,12 +47,12 @@ spec:
         loggingType:
           title: Type of Logging
           type: string
+          enum: ['pci', 'sox', 'sensitive_financial', 'pii', 'not_applicable']
           description: How many lambdas would you like to be created?
           ui:autofocus: true
           ui:options:
             rows: 5
-          ui:enum:
-            ['pci', 'sox', 'sensitive_financial', 'pii', 'not_applicable']
+
     - title: Choose a location
       required:
         - repoUrl
