@@ -30,6 +30,15 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
+        email:
+          title: Email
+          type: string
+          description: Unique name of the component
+          ui:autofocus: true
+          ui:options:
+            rows: 5
+            inputType: email
+            # check this out
         githubTeam:
           title: Github Team
           type: string
@@ -37,18 +46,31 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
-        numLambdas:
-          title: Number of Lambdas
-          type: number
-          description: How many lambdas would you like to be created?
+        costCenter:
+          title: Cost Center
+          type: string
+          enum:
+            [
+              'corp',
+              'csbb',
+              'demm',
+              'hlth',
+              'lgcy',
+              'mobi',
+              'nvsm',
+              'plat',
+              'scff',
+              'opta',
+            ]
+          description: What cost center do you want associated with this app?
           ui:autofocus: true
           ui:options:
             rows: 5
-        loggingType:
-          title: Type of Logging
+        dataClassification:
+          title: Data Classification
           type: string
           enum: ['pci', 'sox', 'sensitive_financial', 'pii', 'not_applicable']
-          description: How many lambdas would you like to be created?
+          description: What is the data classification for this app?
           ui:autofocus: true
           ui:options:
             rows: 5
